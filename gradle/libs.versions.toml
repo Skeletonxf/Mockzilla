@@ -62,6 +62,8 @@ vanniktech-publish = "0.36.0" # https://github.com/vanniktech/gradle-maven-publi
 # License attribution
 aboutlibraries = "15.0.3" # https://github.com/mikepenz/AboutLibraries/releases
 
+compose-glfw = "0.2.0"
+
 [libraries]
 
 # Compose & Material
@@ -130,6 +132,11 @@ lyricist-processor = { module = "cafe.adriel.lyricist:lyricist-processor", versi
 
 # License attribution
 aboutlibraries-core = { module = "com.mikepenz:aboutlibraries-core", version.ref = "aboutlibraries" }
+
+# Better rendering on Linux
+compose-glfw = { module = "dev.sargunv:compose-glfw", version.ref = "compose-glfw" }
+compose-glfw-arm = { module = "dev.sargunv:compose-glfw-opengl-linux-arm64", version.ref = "compose-glfw" }
+compose-glfw-x64 = { module = "dev.sargunv:compose-glfw-opengl-linux-x64", version.ref = "compose-glfw" }
 
 [plugins]
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

@@ -26,6 +26,7 @@ import com.apadmi.mockzilla.ui.i18n.Strings
 import com.apadmi.mockzilla.ui.ui.common.theme.AppTheme
 
 import co.touchlab.kermit.Logger
+import dev.sargunv.composeglfw.glfwApplication
 import org.jetbrains.skiko.OS
 import org.jetbrains.skiko.hostOs
 
@@ -90,7 +91,7 @@ private fun FrameWindowScope.MockzillaWindowContent(
     DesktopApp()
 }
 
-fun main() = application {
+fun main() = glfwApplication {
     val state = rememberWindowState(
         placement = WindowPlacement.Maximized,
         position = WindowPosition(Alignment.Center),

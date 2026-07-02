@@ -126,6 +126,10 @@ kotlin {
 
                 /* Zeroconf */
                 implementation(libs.jmdns.jmdns)
+
+                implementation(libs.compose.glfw)
+                runtimeOnly(libs.compose.glfw.x64)
+                runtimeOnly(libs.compose.glfw.arm)
             }
         }
         val desktopTest by getting {
